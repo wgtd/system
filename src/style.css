@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+html,body{width:100%;height:100%}
+#app{
+        width: 100%;
+        height: 100%;
+        display: flex;
+}
+/*自定义组件样式*/
+.el-form-item .el-input__validateIcon{
+    color:green
+}
+/*自定义树样式*/
+.custom-tree.el-tree {
+    background: none;
+}
+
+.custom-tree .el-tree-node {
+    position: relative;
+    padding-left: 16px;
+}
+
+.custom-tree .el-tree-node__children {
+    padding-left: 16px;
+}
+
+.custom-tree .el-tree-node :last-child:before {
+    height: 38px;
+}
+
+.custom-tree .el-tree>.el-tree-node:before {
+    border-left: none;
+}
+
+.custom-tree-container .el-tree>.el-tree-node:after {
+    border-top: none;
+}
+
+.custom-tree .el-tree-node:before {
+    content: "";
+    left: -4px;
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+}
+
+.custom-tree .el-tree-node:after {
+    content: "";
+    left: -4px;
+    position: absolute;
+    right: auto;
+    border-width: 1px;
+}
+
+.custom-tree .el-tree-node__expand-icon.is-leaf {
+    display: none;
+}
+
+.custom-tree .el-tree-node:before {
+    border-left: 1px dashed #b8b9bb;
+    bottom: 0;
+    height: 100%;
+    top: -20px;
+    width: 1px;
+}
+
+.custom-tree .el-tree-node:after {
+    border-top: 1px dashed #b8b9bb;
+    height: 20px;
+    top: 20px;
+    width: 24px;
+}
+
+.custom-tree .el-tree-node__content {
+    height: 40px
+}
+/* .el-overlay-dialog,.el-overlay{
+    position:absolute !important
+} */
+/*el-tabs自定义样式*/
+.el-tabs {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 父组件如何控制子组件内部渲染的元素的样式 */
+.el-tabs .el-tabs__header {
+    flex-shrink: 0;
+}
+
+.el-tabs .el-tabs__content {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.el-tab-pane {
+    min-height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+/* 改变默认的遮罩层的大小和位置  让他只盖住选项卡部分 */
+.el-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.el-overlay .el-overlay-dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.el-overlay .el-overlay-dialog .el-dialog {
+    margin-top: 50px;
+}
+.el-form-item{
+    align-items: center
+}
+.messageIndex {
+    z-index: 1000000 !important
+}
+.el-tag__content{
+    font-size: 14px;
+}
+.cell span{
+    font-size:14px;
+}
